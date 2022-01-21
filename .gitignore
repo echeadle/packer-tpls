@@ -6,3 +6,8 @@ crash.log
 
 # For built boxes
 *.box
+
+*/packer_cache/*
+*/output-virtualbox-iso/*
+iso/*
+.vagrant/*

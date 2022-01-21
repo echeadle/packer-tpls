@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    boxes:
+      - centos8
+      - centos7
+      - debian10
+      - debian9
+      - ubuntu1804
+      - ubuntu2004
+    versions: {}
+
+  tasks:
+
+    - include_tasks: shared/build-a-box.yml
+      with_items: "{{ boxes }}"
