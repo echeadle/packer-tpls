@@ -94,7 +94,7 @@
       },
       {
         "type": "vagrant-cloud",
-        "box_tag": "geerlingguy/ubuntu2004",
+        "box_tag": "echeadle/ubuntu2004",
         "version": "{{user `version`}}"
       }
     ]
