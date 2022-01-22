@@ -1,20 +1,15 @@
 # packer-tpls
 ![Validate Packer JSON files](https://github.com/echeadle/packer-tpls/workflows/Validate%20Packer%20JSON%20files/badge.svg)
 
-This project contains the Packer build configurations for all of Edward Cheadle's (geerlingguy's) Vagrant Boxes. Each box builds a minimal base box for use with VirtualBox. Available boxes include:
+This project contains the Packer build configurations for all of Edward Cheadle's (echeadle's) Vagrant Boxes. Each box builds a minimal base box for use with VirtualBox. Available boxes include:
 
-  - [geerlingguy/ubuntu2004](https://app.vagrantup.com/geerlingguy/boxes/ubuntu2004) - [`ubuntu2004` directory](ubuntu2004/)
-  - [geerlingguy/ubuntu1804](https://app.vagrantup.com/geerlingguy/boxes/ubuntu1804) - [`ubuntu1804` directory](ubuntu1804/)
-  - [geerlingguy/centos8](https://app.vagrantup.com/geerlingguy/boxes/centos8) - [`centos8` directory](centos8/)
-  - [geerlingguy/centos7](https://app.vagrantup.com/geerlingguy/boxes/centos7) - [`centos7` directory](centos7/)
-  - [geerlingguy/debian10](https://app.vagrantup.com/geerlingguy/boxes/debian10) - [`debian10` directory](debian10/)
-  - [geerlingguy/debian9](https://app.vagrantup.com/geerlingguy/boxes/debian9) - [`debian9` directory](debian9/)
+  - [eheadle/ubuntu2004](https://app.vagrantup.com/echeadle/boxes/ubuntu2004) - [`ubuntu2004` directory](ubuntu2004/)
 
 All of these boxes are available as public, free Vagrant boxes and can be used with the command:
 
-    vagrant init geerlingguy/[box name here]
+    vagrant init echeadle/[box name here]
 
-You can also fork this repository and customize a build configuration with your own Ansible roles and playbooks to build a fully custom Vagrant box using Packer. For one such example, see the [Drupal VM Packer Build](https://github.com/geerlingguy/packer-drupal-vm).
+You can also fork this repository and customize a build configuration with your own Ansible roles and playbooks to build a fully custom Vagrant box using Packer.
 
 ## Requirements
 
