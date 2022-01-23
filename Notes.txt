@@ -1,0 +1,6 @@
+URL for building server with the new method
+
+https://imagineer.in/blog/packer-build-for-ubuntu-20-04/
+
+Repository
+https://github.com/Praseetha-KR/packer-ubuntu
