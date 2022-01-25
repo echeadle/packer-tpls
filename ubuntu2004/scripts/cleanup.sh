@@ -19,7 +19,8 @@ rm -f /home/vagrant/*.sh
 # Clean up cloud-init
 touch /etc/cloud/cloud-init.disabled
 dpkg-reconfigure cloud-init
-sudo apt-get purge cloud-init
+apt-get purge cloud-init
+apt-get autoremove -y
 rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
 
 
