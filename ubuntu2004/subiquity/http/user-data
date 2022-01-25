@@ -6,11 +6,11 @@ autoinstall:
   apt:
     geoip: true
     preserve_sources_list: true
-#    primary:
-#    - arches: [amd64, i386]
-#      uri: http://de.archive.ubuntu.com/ubuntu
-#    - arches: [default]
-#      uri: http://ports.ubuntu.com/ubuntu-ports
+    primary:
+      - arches: [amd64, i386]
+        uri: http://de.archive.ubuntu.com/ubuntu
+      - arches: [default]
+        uri: http://ports.ubuntu.com/ubuntu-ports
   packages:
     - ubuntu-standard
     - ubuntu-server
