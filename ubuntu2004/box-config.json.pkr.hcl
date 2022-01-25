@@ -10,7 +10,7 @@ source "virtualbox-iso" "ubuntu2004" {
   disk_size               = 81920
   guest_additions_path    = "VBoxGuestAdditions_{{ .Version }}.iso"
   guest_os_type           = "Ubuntu_64"
-  headless                = false
+  headless                = true
   http_directory          = "subiquity/http"
   iso_checksum            = "sha256:f8e3086f3cea0fb3fefb29937ab5ed9d19e767079633960ccb50e76153effc98"
   iso_urls                = ["ubuntu-20.04.3-live-server-amd64.iso", "https://www.releases.ubuntu.com/20.04/ubuntu-20.04.3-live-server-amd64.iso"]
