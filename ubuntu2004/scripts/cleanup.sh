@@ -16,6 +16,13 @@ ln -s /etc/machine-id /var/lib/dbus/machine-id
 # Delete unneeded files.
 rm -f /home/vagrant/*.sh
 
+# Clean up cloud-init
+touch /etc/cloud/cloud-init.disabled
+dpkg-reconfigure cloud-init
+sudo apt-get purge cloud-init
+rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
+
+
 # Zero out the rest of the free space using dd, then delete the written file.
 dd if=/dev/zero of=/EMPTY bs=1M
 rm -f /EMPTY
