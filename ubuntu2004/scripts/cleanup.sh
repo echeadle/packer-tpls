@@ -17,8 +17,6 @@ ln -s /etc/machine-id /var/lib/dbus/machine-id
 rm -f /home/vagrant/*.sh
 
 # Clean up cloud-init
-#sudo touch /etc/cloud/cloud-init.disabled
-#dpkg-reconfigure cloud-init
 systemctl stop cloud-init
 systemctl disable cloud-init
 apt-get purge cloud-init -y
