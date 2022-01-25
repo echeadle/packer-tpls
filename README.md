@@ -2,6 +2,7 @@
 ![Validate Packer JSON files](https://github.com/echeadle/packer-tpls/workflows/Validate%20Packer%20JSON%20files/badge.svg)
 
 This project contains the Packer build configurations for all of Edward Cheadle's (echeadle's) Vagrant Boxes. Each box builds a minimal base box for use with VirtualBox. Available boxes include:
+  - ubuntu2004 has original json files and is transitional.  The next step it to create move that folder to ubuntu2004-org and create a new ubuntu2004 file that will use more variables and remove all the old files.
 
   - [eheadle/ubuntu2004](https://app.vagrantup.com/echeadle/boxes/ubuntu2004) - [`ubuntu2004` directory](ubuntu2004/)
 
