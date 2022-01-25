@@ -19,10 +19,10 @@ rm -f /home/vagrant/*.sh
 # Clean up cloud-init
 #sudo touch /etc/cloud/cloud-init.disabled
 #dpkg-reconfigure cloud-init
-sudo apt-get purge cloud-init -y
-sudo apt-get autoremove -y
-sudo rm -rf /etc/cloud/
-sudo rm -rf /var/lib/cloud/
+apt-get purge cloud-init -y
+apt-get autoremove -y
+rm -rf /etc/cloud/
+rm -rf /var/lib/cloud/
 
 
 # Zero out the rest of the free space using dd, then delete the written file.
