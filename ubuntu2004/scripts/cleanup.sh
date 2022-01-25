@@ -23,6 +23,7 @@ apt-get purge cloud-init -y
 apt-get autoremove -y
 rm -rf /etc/cloud/
 rm -rf /var/lib/cloud/
+rm  /var/log/cloud-init*
 
 
 # Zero out the rest of the free space using dd, then delete the written file.
