@@ -21,7 +21,7 @@ touch /etc/cloud/cloud-init.disabled
 dpkg-reconfigure cloud-init
 apt-get purge cloud-init
 apt-get autoremove -y
-rm -rf /etc/cloud/ && sudo rm -rf /var/lib/cloud/
+rm -rf /etc/cloud/ &&  rm -rf /var/lib/cloud/
 
 
 # Zero out the rest of the free space using dd, then delete the written file.
