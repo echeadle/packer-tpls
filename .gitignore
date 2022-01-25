@@ -11,3 +11,5 @@ crash.log
 */output-virtualbox-iso/*
 iso/*
 .vagrant/*
+*output-ubuntu2004/*
+ubuntu2004/output-ubuntu2004/*

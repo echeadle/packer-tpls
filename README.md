@@ -52,6 +52,9 @@ Test that the box works correctly, then tear it down with:
 
     $ vagrant destroy -f
 
+
+##Generate Passwords
+For some reason passwords failed until I used the command. mkpasswd -m sha-512 --rounds=4096
 ## License
 
 MIT
