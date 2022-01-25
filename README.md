@@ -54,7 +54,7 @@ Test that the box works correctly, then tear it down with:
 
 
 ## Generate Passwords
-For some reason passwords failed until I used the commandr: 
+For some reason passwords failed until I used the command: 
     mkpasswd -m sha-512 --rounds=4096
 
 ## License
