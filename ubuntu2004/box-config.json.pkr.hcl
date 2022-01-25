@@ -50,7 +50,7 @@ build {
 
   post-processors {
     post-processor "vagrant" {
-      output = "builds/<no value>-ubuntu2004.box"
+      output = "builds/{{ .Provider }}-ubuntu2004.box"
     }
     post-processor "vagrant-cloud" {
       box_tag = "echeadle/ubuntu2004"
