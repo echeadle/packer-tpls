@@ -6,6 +6,7 @@
   vars:
     boxes:
       - ubuntu2004
+      - ubuntu2110
     versions: {}
 
   tasks:

@@ -83,7 +83,7 @@ variable "vm_name" {
 }
 
 
-source "virtualbox-iso"  "ubuntu2004" {
+source "virtualbox-iso"  "ubuntu2110" {
   boot_command            = var.boot_cmd
   boot_wait               = var.boot_wait_time
   disk_size               = var.disk_size
@@ -106,7 +106,7 @@ source "virtualbox-iso"  "ubuntu2004" {
 }
 
 build {
-  sources = ["source.virtualbox-iso.ubuntu2004"]
+  sources = ["source.virtualbox-iso.ubuntu2110"]
 
   provisioner "shell" {
     execute_command = "echo 'vagrant' | {{ .Vars }} sudo -S -E bash '{{ .Path }}'"
@@ -130,10 +130,10 @@ build {
 
   post-processors {
     post-processor "vagrant" {
-      output = "builds/{{ .Provider }}-ubuntu2004.box"
+      output = "builds/{{ .Provider }}-ubuntu2110.box"
     }
     post-processor "vagrant-cloud" {
-      box_tag = "echeadle/ubuntu2004"
+      box_tag = "echeadle/ubuntu2110"
       version = "${var.version}"
     }
   }
