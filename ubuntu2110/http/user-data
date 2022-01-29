@@ -3,6 +3,8 @@ autoinstall:
   version: 1
   early-commands:
     - sudo systemctl stop ssh
+    - sudo systemctl stop subiquity
+    - sudo systemctl disable subiquity
   apt:
     geoip: true
     preserve_sources_list: true

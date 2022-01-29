@@ -15,3 +15,10 @@ https://gist.github.com/zoilomora/f862f76335f5f53644a1b8e55fe98320
 
 How to troubleshoot nfs folders
 https://github.com/geerlingguy/drupal-vm/issues/245
+
+//How to generate cloud-init user-data file for Ubuntu 20.04
+https://www.golinuxcloud.com/generate-user-data-file-ubuntu-20-04/
+
+https://cloud-images.ubuntu.com/impish/current/impish-server-cloudimg-amd64.ova
+
+https://www.pugetsystems.com/labs/hpc/How-To-Make-Ubuntu-Autoinstall-ISO-with-Cloud-init-2213/

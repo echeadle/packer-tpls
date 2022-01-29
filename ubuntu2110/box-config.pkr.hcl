@@ -1,3 +1,12 @@
+packer {
+  required_plugins {
+    virtualbox = {
+      version = ">= 0.0.1"
+      source = "github.com/hashicorp/virtualbox"
+    }
+  }
+}
+
 
 variable "version" {
   type    = string
@@ -46,7 +55,9 @@ variable "iso_chksum" {
     default = ""
 }
 
-variable "iso_urlss" { }
+variable "iso_urlss" {
+     type = list(string)
+}
 
 variable "shutdown_cmd" {
     type = string
@@ -83,9 +94,10 @@ variable "vm_name" {
 }
 
 
+
 source "virtualbox-iso"  "ubuntu2110" {
   boot_command            = var.boot_cmd
-  boot_wait               = var.boot_wait_time
+  boot_wait               = "5s"
   disk_size               = var.disk_size
   headless                = var.headless_vm
   guest_os_type           = var.guest_os_type
