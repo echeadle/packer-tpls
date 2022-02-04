@@ -14,3 +14,7 @@ iso/*
 *output-ubuntu2004/*
 ubuntu2004/output-ubuntu2004/*
 .vagrant
+ova
+ubun2110
+virtualbox-ubuntu2110.box
+virtualbox-ubuntu2004.box

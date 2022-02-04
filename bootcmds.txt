@@ -1,0 +1,146 @@
+// Boot commands are put in the from required to use HCL
+
+// Works for Ubuntu Server 20.04
+boot_command          = ["<enter><enter><f6><esc><wait> ", "autoinstall ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/", "<wait><enter>"]
+
+
+boot_command" = [
+                "<enter><wait>",
+                "<f6><esc>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+                "/install/vmlinuz ",
+                "initrd=/install/initrd.gz ",
+                "auto-install/enable=true ",
+                "debconf/priority=critical ",
+                "autoinstall ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/"
+                "--- <enter>"]
+
+boot_command = [" <wait><enter><wait>","<f6><esc>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+   "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs>",
+    "/casper/vmlinuz ",
+    "initrd=/casper/initrd ",
+    "auto-install/enable=true ",
+    "autoinstall ds=nocloud-net;s=http://{{.HTTPIP}}:{{.HTTPPort}}/",
+    "--- <enter>"]
+
+boot_command = ["<esc><wait><esc><wait><f6><wait><esc><wait>",
+    "<bs><bs><bs><bs><bs>",
+    "autoinstall ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ ",
+    "--- <enter>"]
+
+"boot_command": [
+    " <wait><enter><wait>",
+    "<f6><esc>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs><bs><bs><bs><bs><bs><bs><bs>",
+    "<bs><bs><bs>",
+    "/casper/vmlinuz ",
+    "initrd=/casper/initrd ",
+    "autoinstall ",
+    "ds=nocloud-net;s=http://{{.HTTPIP}}:{{.HTTPPort}}/ubuntu-20.04/ ",
+    "<enter>"
+    ]
+
+
+             "boot_command": [
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                "c",
+                "<wait>",
+                "set gfxpayload=keep",
+                "<enter><wait>",
+                "linux /casper/vmlinuz quiet<wait>",
+                " autoinstall<wait>",
+                " ds=nocloud-net<wait>",
+                "\\;s=http://<wait>",
+                "{{.HTTPIP}}<wait>",
+                ":{{.HTTPPort}}/<wait>",
+                " ---",
+                "<enter><wait>",
+                "initrd /casper/initrd<wait>",
+                "<enter><wait>",
+                "boot<enter><wait>"
+
+
+                "boot_command": [
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                " <wait>",
+                "c",
+                "<wait>",
+                "set gfxpayload=keep",
+                "<enter><wait>",
+                "linux /casper/vmlinuz quiet<wait>",
+                " autoinstall<wait>",
+                " ds=nocloud-net<wait>",
+                "\\;s=http://<wait>",
+                "{{.HTTPIP}}<wait>",
+                ":{{.HTTPPort}}/<wait>",
+                " ---",
+                "<enter><wait>",
+                "initrd /casper/initrd<wait>",
+                "<enter><wait>",
+                "boot<enter><wait>"
+            ],
+
+
+                 "boot_command": [
+         "<esc><esc><esc>",
+         "c",
+         "<wait>"
+         "<enter><wait>",
+         "/casper/vmlinuz ",
+         "root=/dev/sr0 ",
+         "initrd=/casper/initrd ",
+         "autoinstall ",
+         "ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
+         "<enter>"
+      ],
+                 "boot_command": [
+         "<esc><esc><esc>",
+         "<enter><wait>",
+         "/casper/vmlinuz ",
+         "root=/dev/sr0 ",
+         "initrd=/casper/initrd ",
+         "autoinstall ",
+         "ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/",
+         "<enter>"
+      ],
+
+
+ boot_command = ["<esc><esc><enter><wait>",
+                 "c
+                "/install/vmlinuz noapic preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+                "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
+                "hostname={{ .Name }} ",
+                "fb=false debconf/frontend=noninteractive ",
+                "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ",
+                "initrd=/install/initrd.gz -- <enter>"]
+
