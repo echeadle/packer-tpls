@@ -13,6 +13,7 @@ iso/*
 .vagrant/*
 *output-ubuntu2004/*
 ubuntu2004/output-ubuntu2004/*
+ubuntu2110/output-ubuntu2110/*
 .vagrant
 ova
 ubun2110
