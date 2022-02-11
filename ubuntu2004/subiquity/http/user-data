@@ -23,6 +23,9 @@ autoinstall:
     - dkms
     - nfs-common
     - software-properties-common
+    - gcc
+    - make
+    - perl
   identity: 
     hostname: vagrant
     password: "$6$rounds=4096$JBrFa4CVsTyCNhsL$oIeb.7pUyQGBCoIX3axMI0ftxJHpIq9CTl3hWoLG/KrCNplFClRTl9IUtM.CKzDa5qXmpto0qbCGVidk3Hz2Q0"

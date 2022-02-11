@@ -29,8 +29,5 @@
           - wget
           - curl
           - vim
-          - gcc 
-          - make
-          - perl 
         state: present
       when: ansible_os_family == 'Debian'

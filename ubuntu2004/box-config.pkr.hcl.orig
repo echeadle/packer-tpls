@@ -95,6 +95,7 @@ source "virtualbox-iso"  "ubuntu2004" {
   disk_size               = var.disk_size
   headless                = var.headless_vm
   guest_os_type           = var.guest_os_type
+# guest_additions_mode    = var.guest_add_mode
   guest_additions_path    = var.guest_add_path
   http_directory          = var.http_dir
   iso_checksum            = var.iso_chksum
@@ -137,6 +138,10 @@ build {
   post-processors {
     post-processor "vagrant" {
       output = "builds/{{ .Provider }}-ubuntu2004.box"
+    }
+    post-processor "vagrant-cloud" {
+      box_tag = "echeadle/ubuntu2004"
+      version = "${var.version}"
     }
   }
 }
